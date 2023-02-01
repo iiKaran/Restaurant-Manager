@@ -2,69 +2,191 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="main.css">
- <script src="https://cdn.tailwindcss.com"></script>
- <title>ResturantHelper</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>ResturantHelper</title>
 </head>
 
 <body>
- <div class=" sidebar flex flex-col ">
-  <div class="logo">
-   <img src="images/dark_logo.jpg" alt="loading" class="w-[180px]">
+  <div class=" sidebar flex flex-col ">
+    <div class="logo">
+      <img src="images/dark_logo.jpg" alt="loading" class="w-[180px]">
+    </div>
+
+    <div class="side-categories">My-Cart</div>
+    <div class="side-categories">History</div>
+    <div class="side-categories">Guide</div>
+    <div class="side-categories">Feedback</div>
+    <div class="side-categories btn rounded-md">New Order</div>
+    <div class="side-categories btn rounded-md">Status</div>
   </div>
 
-  <div class="side-categories">My-Cart</div>
-  <div class="side-categories">History</div>
-  <div class="side-categories">Guide</div>
-  <div class="side-categories">Feedback</div>
-  <div class="side-categories btn rounded-md">New Order</div>
-  <div class="side-categories btn rounded-md">Status</div>
- </div>
+  <!-- right part of the page -->
+  <div class="right-part">
+    <nav class="food-categories ">
+      <div class="item group">
+        <img src="images/pizaa.jpg" alt="" class="group-hover:opacity-[0.5]">
+        <span class="">Pizaas</span>
+      </div>
+      <div class="item group">
+        <img src="images/Momos.jpg" alt="" class="group-hover:opacity-[0.5]">
+        <span class="">Momos</span>
 
- <!-- right part of the page -->
- <div class="right-part">
- <nav class="food-categories ">
-  <div class="item group">
-   <img src="images/pizaa.jpg" alt="" class="group-hover:opacity-[0.5]" >
-    <span class="group-hover:text-white">Pizaas</span>
-  </div>
-  <div class="item group">
-   <img src="images/Momos.jpg" alt="" class="group-hover:opacity-[0.5]" >
-   <span class="group-hover:text-white">Momos</span>
+      </div>
+      <div class="item group">
+        <img src="images/rools.jpg" alt="" class="group-hover:opacity-[0.5]">
+        <span class="">Rools</span>
+      </div>
+      <div class="item group">
+        <img src="images/Burger.jpg" alt="" class="group-hover:opacity-[0.5]">
+        <span class="">Burgers</span>
 
-  </div>
-  <div class="item group">
-   <img src="images/rools.jpg" alt="" class="group-hover:opacity-[0.5]" >
-    <span class="group-hover:text-white">Rools</span>
-  </div>
-  <div class="item group">
-   <img src="images/Burger.jpg" alt="" class="group-hover:opacity-[0.5]" >
-   <span class="group-hover:text-white">Burgers</span>
+      </div>
+      <div class="item group">
+        <img src="images/chicken.jpg" alt="" class="group-hover:opacity-[0.5]">
+        <span class="">Chicken</span>
+      </div>
+      <div class="item group">
+        <img src="images/Momos.jpg" alt="" class="group-hover:opacity-[0.5]">
+        <span class="">Momos</span>
 
-  </div>
-  <div class="item group">
-   <img src="images/chicken.jpg" alt="" class="group-hover:opacity-[0.5]" >
-   <span class="group-hover:text-white">Chicken</span>
-  </div>
-  <div class="item group">
-   <img src="images/Momos.jpg" alt="" class="group-hover:opacity-[0.5]" >
-   <span class="group-hover:text-white">Momos</span>
+      </div>
+      <div class="item group">
+        <img src="images/rools.jpg" alt="" class="group-hover:opacity-[0.5]">
+        <span class="">Rools</span>
+      </div>
+      <div class="item group">
+        <img src="images/Burger.jpg" alt="" class="group-hover:opacity-[0.5] ">
+        <span class="">Burgers</span>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart">Add to Cart</div>
+      </div>
+      <div class="card">
+        <h2>item-name</h2>
+        <img src="images/food.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor!</p>
+        <div class="flex">
+          <div class="price">$1200 <span>1900</span></div>
+          <div class="offer">30% off</div>
+        </div>
+        <div class="add-to-cart ">Add to Cart</div>
+      </div>
 
+    </div>
   </div>
-  <div class="item group">
-   <img src="images/rools.jpg" alt="" class="group-hover:opacity-[0.5]" >
-    <span class="group-hover:text-white">Rools</span>
-  </div>
-  <div class="item group">
-   <img src="images/Burger.jpg" alt="" class="group-hover:opacity-[0.5]" >
-   <span class="group-hover:text-white">Burgers</span>
-  </div>
-
- </nav>
-</div>
 </body>
 
 </html>
