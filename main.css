@@ -225,19 +225,6 @@ border-radius: 4px;
 margin-bottom: 18px;
 padding-bottom: 18px;
 }
-.table-row{
- width: 100%;
- box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
- display: grid;
- padding: 15px;
- grid-template-columns: 0.5fr 1fr 1fr 1fr;
- /* border: 2px solid red; */
- border-radius: 6px;
- align-items: center;
- margin-top: 13px;
- column-gap: 4px;
- /* border: 2px solid red; */
-}
 .table-row img{
  width: 80px;
  border-radius: 4px;
@@ -277,4 +264,31 @@ padding-bottom: 18px;
 .total {
  display: flex;
  gap: 4px;
+}
+.table-row{
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: auto;
+ margin-bottom: 9px;
+ margin-top: 12px;
+ width: 90%;
+ padding: 6px;
+}
+input{
+width:40px;
+}
+.btn-paid{
+ background-color: green;
+ color: white;
+ font-size: 1.3rem;
+ font-weight: 600;
+ width: 80%;
+ padding: 12px;
+ text-align: center;
+ border-radius: 8px;
+ margin: auto;
+ margin-top: 12px;
+ cursor: pointer;
 }
