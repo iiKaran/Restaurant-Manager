@@ -13,6 +13,7 @@ body {
  background-color: #22272b;
  display: flex;
  /* padding: 12px; */
+ /* flex-wrap: wrap; */
 }
 .sidebar {
  display: inline-block;
@@ -76,6 +77,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
 .right-part {
  margin-left: 12px;
  width: 80vw;
+ /* border: 2px solid red; */
  padding: 12px;
 }
 
@@ -171,4 +173,108 @@ margin-left: 3px;
 }
 .add-to-cart:hover{
  opacity: 0.4;
+}
+.cart{
+ min-height: 120vh;
+ width:39vw;
+ /* border: 2px solid red; */
+ /* width: 50vw; */
+ margin: auto;
+ background-color: var(--dark);
+ position: absolute;
+ left:100%; 
+ /* cursor: pointer; */
+ padding: 12px;
+}
+.cart-item{
+ color: white;
+}
+.cart-nav{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 2em;
+ /* border: 2px solid red; */
+ margin-bottom: 4px;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+border-radius: 8px ;
+}
+
+.cart-logo{
+ font-size: 35px;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-weight: 700;
+ color: #ffc50a;
+ line-height: 2em;
+ letter-spacing: 2px;
+}
+.clear,.addmore{
+ background-color: #f8c314b2;
+ padding: 12px 20px;
+ font-weight: 700;
+ font-size: 21px;
+ border-radius: 4px;
+ cursor: pointer;
+}
+.table{
+padding: 2px;
+/* border: 2px solid red; */
+width: 100%;
+border-bottom: 4px solid #ffc50a;
+border-radius: 4px;
+margin-bottom: 18px;
+padding-bottom: 18px;
+}
+.table-row{
+ width: 100%;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+ display: grid;
+ padding: 15px;
+ grid-template-columns: 0.5fr 1fr 1fr 1fr;
+ /* border: 2px solid red; */
+ border-radius: 6px;
+ align-items: center;
+ margin-top: 13px;
+ column-gap: 4px;
+ /* border: 2px solid red; */
+}
+.table-row img{
+ width: 80px;
+ border-radius: 4px;
+ /* border-radius: 50%; */
+}
+.item-name{
+ color: white;
+ font-size: x-large;
+ /* font-size: medium; */
+ font-family: Arial, Helvetica, sans-serif;
+ margin-left: 12px;
+}
+#qty{
+ width:50%;
+ padding: 3px 12px ;
+ border-radius: 4px ;
+}
+.price{
+ color: white;
+ font-size: 1.4rem;
+ font-size: medium;
+ font-family: Arial, Helvetica, sans-serif;
+ /* letter-spacing: 1px; */
+ font-weight:400;
+ font-size: x-large;
+
+}
+.total div{
+ color: white;
+ font-size: 1.4rem;
+ font-size: medium;
+ font-family: Arial, Helvetica, sans-serif;
+ /* letter-spacing: 1px; */
+ font-weight:400;
+ font-size: x-large;
+}
+.total {
+ display: flex;
+ gap: 4px;
 }
