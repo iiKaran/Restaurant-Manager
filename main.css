@@ -14,6 +14,7 @@ body {
  display: flex;
  /* padding: 12px; */
  /* flex-wrap: wrap; */
+ overflow-x: hidden;
 }
 .sidebar {
  display: inline-block;
@@ -237,7 +238,7 @@ padding-bottom: 18px;
  font-family: Arial, Helvetica, sans-serif;
  margin-left: 12px;
 }
-#qty{
+.qty{
  width:50%;
  padding: 3px 12px ;
  border-radius: 4px ;
@@ -291,4 +292,11 @@ width:40px;
  margin: auto;
  margin-top: 12px;
  cursor: pointer;
+}
+#head-img{
+ width: 180px;
+}
+#table-row{
+ width: 100%;
+ display: flex;
 }

@@ -266,10 +266,10 @@ function populate(id) {
   // console.log(obj[id]);
   arr = obj[id];
   Array.from(arr).forEach((e) => {
-   // data-aos="fade-in" data-aos-anchor=".other-element" data-aos-duration="3000"
-    row.innerHTML += `<div class="card" >
+   // 
+    row.innerHTML += `<div class="card" data-aos="fade-in" data-aos-anchor=".other-element" data-aos-duration="1000" >
   <h2>${e.name}</h2>
-  <img src="${e.src}" alt="">
+  <img src="${e.src}" alt="" loading="lazy">
   <p>${e.desc}</p>
   <div class="flex">
     <div class="price">Rs.${e.price} <span>${e.oldPrice}</span></div>
@@ -290,10 +290,10 @@ function addToCart(element) {
   table = document.getElementById("table");
   price = document.getElementById("amt");
   let sum = 0;
-  table.innerHTML += `<div class="table-row flex">
+  table.innerHTML += `<div class="table-row flex" id="table-row" data-aos="fade-in" data-aos-anchor=".other-element" data-aos-duration="2000">
  <img src=${element.src} alt="">
  <div class="item-name">${element.name}</div>
- <div class="item-quantity"><input type="number" name="" id="qty" value="1" onchange="updatePrice()"></div>
+ <div class="item-quantity"><input type="number" name="" id="qty"  value="1" ></div>
  <div class="price">${element.price}-/-</div>
 </div>`;
   price.innerText = `${parseInt(price.innerText) + element.price}`;
@@ -320,3 +320,15 @@ function clr() {
   price.innerText = "0";
   addmore();
 }
+
+
+document.getElementById("mycart").addEventListener("click",()=>{
+  cart.style.left = "60%";
+})
+document.getElementById("new").addEventListener("click",()=>{
+  cart.style.left = "60%";
+  table.innerHTML='';
+})
+document.getElementById("status").addEventListener("click",()=>{
+  cart.style.left = "60%";
+})

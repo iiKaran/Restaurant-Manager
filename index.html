@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <title>Resturant-Helper</title>
 </head>
 
 <body>
   <div class=" sidebar flex flex-col ">
     <div class="logo">
-      <img src="images/dark_logo.jpg" alt="loading" class="w-[180px]">
+      <img src="images/dark_logo.jpg" alt="loading" class="w-[180px]" id="head-img">
     </div>
 
-    <div class="side-categories">My-Cart</div>
-    <div class="side-categories">History</div>
+    <div class="side-categories" id="mycart">Bucket</div>
+    <!-- <div class="side-categories">History</div> -->
     <div class="side-categories">Guide</div>
     <div class="side-categories">Feedback</div>
-    <div class="side-categories btn rounded-md">New Order</div>
-    <div class="side-categories btn rounded-md">Status</div>
+    <div class="side-categories btn rounded-md" id="new">New Order</div>
+    <div class="side-categories btn rounded-md" id="status">Status</div>
   </div>
   <!-- right part of the page -->
   <div class="right-part">
