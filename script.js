@@ -332,3 +332,7 @@ document.getElementById("new").addEventListener("click",()=>{
 document.getElementById("status").addEventListener("click",()=>{
   cart.style.left = "60%";
 })
+var e = document.getElementById('feedback-main');
+e.style.display="block";
+
+// toggle_visibility(); 
